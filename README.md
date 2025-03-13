@@ -21,3 +21,4 @@ Reif Birzin, Zelig Riyanto, Olivia McCarty
   We chose \( 16^7 \) (268,435,456 trials) because each leading zero in the hash reduces the probability of success by a factor of 16. Since SHA-256 hashes are uniformly distributed, the probability of finding a hash with **7 leading zeros** in a single trial is 1/16^7. Therefore, on average, we expect to run \( 16^7 \) trials to find a valid nonce.
 
 ## (3)
+The sequential nonce generation may be more efficient for smaller numbers of trials as it can test every value in the range. Although the solution could be at the end of the range, it does not require the generation of random numbers. In contrast the random nonce generation may be more efficient for larger numbers of trials, since it is possible to get lucky and find a solution early instead of running through over a million possibilities for higher difficulties.
