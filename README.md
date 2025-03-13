@@ -17,6 +17,6 @@ Reif Birzin, Zelig Riyanto, Olivia McCarty
 |--------------|------------------------------|------------------------------------------------------------------|--------------|--------------------------|
 7 | 689470094this_is_a_bitcoin_block_of_10323123_and_66024292_and_7789823 | 000000decbddf1b818c3bd135a147a35ec691ea90aae6ca13fb8d552be1e6467 | 1s | 268,435,456 (\(16^7\)) |
 
-   We determined the number of trials by taking 16^k. This is the expected number due to the SHA256 hash being in hexadecimal, which uses 16 digits.
+  We chose \( 16^7 \) (268,435,456 trials) because each leading zero in the hash reduces the probability of success by a factor of 16. Since SHA-256 hashes are uniformly distributed, the probability of finding a hash with **7 leading zeros** in a single trial is \( \frac{1}{16^7} \). Therefore, on average, we expect to run \( 16^7 \) trials to find a valid nonce.
 
-4.
+3.
