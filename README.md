@@ -10,7 +10,7 @@ Reif Birzin, Zelig Riyanto, Olivia McCarty
 | 5 | 1237889526this_is_a_bitcoin_block_of_10323123_and_66024292_and_77898238 | 000005ed60d62850ab0a922419b33ea5cb40cba6fce636a7cf754f9d8c1151ba | 2s | 1,048,576 (\(16^5\)) |
 | 6 | 689470094this_is_a_bitcoin_block_of_10323123_and_66024292_and_77898238 | 000000decbddf1b818c3bd135a147a35ec691ea90aae6ca13fb8d552be1e6467 | 8s | 16,777,216 (\(16^6\)) |
 
-2. 1 Master Node (n2-standard-4)
+2. 1 Master Node (n2-standard-4) and
    2 Worker Nodes (n2-standard-4)
    
 | Difficulty (k) | xS (Nonce + String) | SHA-256 Hash | Time Elapsed | Trials |
